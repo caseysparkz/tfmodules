@@ -9,8 +9,8 @@ bot:
   - head-branch: ['^dependabot/*']
 chore:
   - head-branch:
-    - '^chore*'
-    - '^dependabot*'
+      - '^chore*'
+      - '^dependabot*'
 feature:
   - head-branch: ['^feat*']
 fix:
@@ -19,39 +19,39 @@ fix:
 # Filetype/language labels
 ci: &ci
   - changed-files:
-    - any-glob-to-any-file:
-      - '.github/config/*'
-      - '.github/workflows/*.yaml'
-      - '.github/workflows/*.yml'
-codeowners: 
+      - any-glob-to-any-file:
+          - '.github/config/*'
+          - '.github/workflows/*.yaml'
+          - '.github/workflows/*.yml'
+codeowners:
   - changed-files:
-    - any-glob-to-any-file:
-      - './github/CODEOWNERS'
-      - './github/codeowners'
-dependabot: 
+      - any-glob-to-any-file:
+          - './github/CODEOWNERS'
+          - './github/codeowners'
+dependabot:
   - changed-files:
-    - any-glob-to-any-file: ['./github/dependabot.yml']
+      - any-glob-to-any-file: ['./github/dependabot.yml']
 documentation:
   - changed-files:
-    - any-glob-to-any-file:
-      - '**/*.md'
-      - '**/*README*'
-      - '**/doc/**'
-      - '**/docs/**'
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - '**/*README*'
+          - '**/doc/**'
+          - '**/docs/**'
 git:
   - changed-files:
-    - any-glob-to-any-file:
-      - '**/.git*'
-      - '.gitattributes'
-      - '.gitmodules'
+      - any-glob-to-any-file:
+          - '**/.git*'
+          - '.gitattributes'
+          - '.gitmodules'
 github:
   - changed-files:
-    - any-glob-to-any-file: ['.github/**']
+      - any-glob-to-any-file: ['.github/**']
 terraform:
   - changed-files:
-    - any-glob-to-any-file:
-      - '**/*.hcl'
-      - '**/*.tf'
-      - '**/*.tf.json'
-      - '**/*.tfvars'
-      - '**/*.tfvars.json'
+      - any-glob-to-any-file:
+          - '**/*.hcl'
+          - '**/*.tf'
+          - '**/*.tf.json'
+          - '**/*.tfvars'
+          - '**/*.tfvars.json'
